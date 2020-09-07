@@ -1,0 +1,23 @@
+# 2 - Criando a base da aplicação
+cd backend
+
+npm install nodemon -D
+npm install knex
+npm install sqlite3
+
+npx knex init
+npx knex migrate:make create_ongs
+npx knex migrate:latest
+
+npx knex migrate:make create_incidents
+npx knex migrate:latest
+
+npx knex migrate:rollback
+npx knex migrate:status
+
+npm intall cors
+
+# 3 -Construindo a interface web
+npm install react-icons
+npm install react-router-dom
+npm install axios
