@@ -17,7 +17,53 @@ npx knex migrate:status
 
 npm intall cors
 
-# 3 -Construindo a interface web
+# 3 - Construindo a interface web
 npm install react-icons
 npm install react-router-dom
 npm install axios
+
+# 4 - Desenvolvendo o app mobile
+expo init mobile
+
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm install @react-navigation/stack
+expo install expo-constants
+
+# Enviar email
+expo install expo-mail-composer
+
+npm install axios
+npm install intl # formatar preço em pt-br
+
+# 5 - Funcionalidades avançadas
+npm install celebrate # Validação no backend
+
+npm install jest -D # Testes
+npx jest --init
+npm test # executar teste
+
+npm install cross-env # variaveis de ambiente no node
+npm install supertest -D
+
+# Deploy
+  ## Nodejs
+    ### Aplicação experimental
+      * Heroku (https://www.heroku.com)
+
+    ### Aplicação Comercial Pequena/Média
+      * Digital Ocean (https://www.digitalocean.com)
+
+    ### Aplicação Comercial Grande
+      * AWS (Amazon Web services)
+      * Google Cloud Platform
+      * Microsoft Azure
+
+  ## Frontend
+    ### Aplicação experimental
+      Netlify (https://www.netlify.com)
+
+# Estudos daqui pra frente
+  * Padrões de código: ESLint, Prettier
+  * Autenticação JWT
+  * Styled Components
